@@ -1,34 +1,7 @@
-// import React from 'react';
-// import logo from './logo.svg';
-
-// function App() {
-  //   return (
-    //     <div className="App">
-    //       <header className="App-header">
-    //         <img src={logo} className="App-logo" alt="logo" />
-    //         <p>
-    //           Edit <code>src/App.js</code> and save to reload.
-    //         </p>
-    //         <a
-    //           className="App-link"
-    //           href="https://reactjs.org"
-    //           target="_blank"
-    //           rel="noopener noreferrer"
-    //         >
-    //           Learn React
-    //         </a>
-    //       </header>
-    //     </div>
-    //   );
-    // }
-    
-    // export default App;
-    
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import './App.css';
-import image from './tappo-logo.png';
 import imageCentered from './logo-centered.png';
 import food from './header-image.jpg';
 import {
@@ -36,9 +9,7 @@ import {
   Divider,
   Grid,
   Header,
-  Icon,
   Image,
-  Menu,
   Segment,
   Sidebar,
   Visibility
@@ -78,7 +49,6 @@ class DesktopContainer extends Component {
 
   render() {
     const { children } = this.props
-    const { fixed } = this.state
 
     return (
       <Media greaterThan='mobile'>
@@ -93,23 +63,7 @@ class DesktopContainer extends Component {
             style={{padding: '1em 0em' }}
             vertical
           >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Container>
-                <Menu.Item position='left' style={{padding: 0}}>
-                  <Image src={image} size="medium"></Image>
-                </Menu.Item>
-                <Menu.Item as='a' active position='right'>
-                  Home
-                </Menu.Item>
-                <Menu.Item as='a' href="#menu">Menu</Menu.Item>
-              </Container>
-            </Menu>
+            <Image src={imageCentered} size="large" centered></Image>
             <HomepageHeading />
           </Segment>
         </Visibility>
@@ -138,20 +92,6 @@ class MobileContainer extends Component {
     return (
       <Media as={Sidebar.Pushable} at='mobile'>
         <Sidebar.Pushable>
-          <Sidebar
-            as={Menu}
-            animation='overlay'
-            inverted
-            onHide={this.handleSidebarHide}
-            vertical
-            visible={sidebarOpened}
-          >
-            <Menu.Item as='a' active>
-              Home
-            </Menu.Item>
-            <Menu.Item as='a' href="#menu">Menu</Menu.Item>
-          </Sidebar>
-
           <Sidebar.Pusher dimmed={sidebarOpened}>
             <Segment
               inverted
@@ -161,11 +101,6 @@ class MobileContainer extends Component {
             >
               <Container>
               <Image src={imageCentered} size="medium" centered></Image>
-                <Menu inverted pointing secondary size='large'>
-                  <Menu.Item onClick={this.handleToggle}>
-                    <Icon name='sidebar' />
-                  </Menu.Item>
-                </Menu>
               </Container>
               <HomepageHeading mobile />
             </Segment>
@@ -200,19 +135,19 @@ ResponsiveContainer.propTypes = {
 let iframe = (<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.7854724765825!2d-157.83238708457063!3d21.27995778586273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0073499efd3b07%3A0x8b2eef873af29572!2sIL%20TAPPO%20Hawaii!5e0!3m2!1sen!2sus!4v1601869538496!5m2!1sen!2sus" title="address" width="300" height="200" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>);
 const App = () => (
   <ResponsiveContainer>
-    <Segment style={{backgroundColor:'#800020'}} vertical>
+    <Segment inverted vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8} textAlign='center'>
-          <Header as='h3' style={{ fontSize: '1.3em', color:'white' }}>
-              Tel: 808.554.8179
-            </Header>
-          </Grid.Column>
-          <Grid.Column width={8} textAlign='center'>
-            <Header as='h3' style={{ fontSize: '1.3em', color:'white' }}>
+            <Header as='h3' style={{ fontSize: '1.3em', color:'white' }} className="lol-text">
               IL TAPPO <br/>
               2181 Kalakaua Ave. <br/>
               Honolulu HI, 96825
+            </Header>
+          </Grid.Column>
+          <Grid.Column width={8} textAlign='center'>
+          <Header as='h3' style={{ fontSize: '1.3em', color:'white' }} className="lol-text">
+              Tel: 808.554.8179
             </Header>
           </Grid.Column>
         </Grid.Row>
@@ -417,7 +352,7 @@ const App = () => (
           13oz of a New York steak, cherry tomato, basil, rucola & shaved parmiggiano reggiano
         </p>
         <Header as='h3' className="menu-item">
-          LASAGNA Del Giorno 25
+          Lasagna Del Giorno 25
         </Header>
       </Container>
 
@@ -448,7 +383,7 @@ const App = () => (
       </Container>
     </Segment>
 
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+    <Segment inverted vertical style={{ padding: '1em 0em' }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
