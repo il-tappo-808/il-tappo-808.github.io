@@ -47,6 +47,8 @@
 .menu-group {
   padding: 2em 0em;
   background-color: #fff !important;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .seg {

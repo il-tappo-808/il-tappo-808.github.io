@@ -29,16 +29,15 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import './App.css';
 import image from './tappo-logo.png';
-import food from './tappo-header.jpg';
+import imageCentered from './logo-centered.png';
+import food from './header-image.jpg';
 import {
-  Button,
   Container,
   Divider,
   Grid,
   Header,
   Icon,
   Image,
-  List,
   Menu,
   Segment,
   Sidebar,
@@ -58,35 +57,8 @@ const { MediaContextProvider, Media } = createMedia({
  * components for such things.
  */
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
-
-{/* style={{
-      backgroundImage: `url(${image})`,
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat'
-    }} */}
-    <Image src={food} size='huge' centered/>
-    {/* <Header
-      as='h1'
-      content='Il Tappo'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: '1em',
-      }}
-    />
-    <Header
-      as='h2'
-      content='Italian Restaurant and Wine Bar'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    /> */}
+  <Container>
+    <Image src={food} size='huge' centered style={{maxWidth:'100%'}}/>
   </Container>
 )
 
@@ -135,9 +107,7 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active position='right'>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a' href="#menu">Menu</Menu.Item>
               </Container>
             </Menu>
             <HomepageHeading />
@@ -179,11 +149,7 @@ class MobileContainer extends Component {
             <Menu.Item as='a' active>
               Home
             </Menu.Item>
-            <Menu.Item as='a'>Work</Menu.Item>
-            <Menu.Item as='a'>Company</Menu.Item>
-            <Menu.Item as='a'>Careers</Menu.Item>
-            <Menu.Item as='a'>Log in</Menu.Item>
-            <Menu.Item as='a'>Sign Up</Menu.Item>
+            <Menu.Item as='a' href="#menu">Menu</Menu.Item>
           </Sidebar>
 
           <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -194,17 +160,10 @@ class MobileContainer extends Component {
               vertical
             >
               <Container>
+              <Image src={imageCentered} size="medium" centered></Image>
                 <Menu inverted pointing secondary size='large'>
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' />
-                  </Menu.Item>
-                  <Menu.Item position='right'>
-                    <Button as='a' inverted>
-                      Log in
-                    </Button>
-                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                      Sign Up
-                    </Button>
                   </Menu.Item>
                 </Menu>
               </Container>
@@ -241,34 +200,20 @@ ResponsiveContainer.propTypes = {
 let iframe = (<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.7854724765825!2d-157.83238708457063!3d21.27995778586273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0073499efd3b07%3A0x8b2eef873af29572!2sIL%20TAPPO%20Hawaii!5e0!3m2!1sen!2sus!4v1601869538496!5m2!1sen!2sus" title="address" width="300" height="200" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>);
 const App = () => (
   <ResponsiveContainer>
-    <Segment style={{backgroundColor:'#1b1c1d'}} vertical>
+    <Segment style={{backgroundColor:'#800020'}} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8} textAlign='center'>
-            <Header as='h3' style={{ fontSize: '1.2em', color:'white' }}>
+          <Header as='h3' style={{ fontSize: '1.3em', color:'white' }}>
+              Tel: 808.554.8179
+            </Header>
+          </Grid.Column>
+          <Grid.Column width={8} textAlign='center'>
+            <Header as='h3' style={{ fontSize: '1.3em', color:'white' }}>
               IL TAPPO <br/>
               2181 Kalakaua Ave. <br/>
               Honolulu HI, 96825
             </Header>
-            <Header as='h3' style={{ fontSize: '1.2em', color:'white' }}>
-              Tel: 808.554.8179
-            </Header>
-            {/* <p style={{ fontSize: '1.33em' }}>
-              We can give your company superpowers to do things that they never thought possible.
-              Let us delight your customers and empower your needs... through pure data analytics.
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              We Make Bananas That Can Dance
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-              bioengineered.
-            </p> */}
-          </Grid.Column>
-          <Grid.Column floated='right' width={8}>
-            <div>
-              {iframe}
-            </div>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -299,7 +244,7 @@ const App = () => (
       </Grid>
     </Segment> */}
 
-    <Segment className="seg" vertical textAlign='center'>
+    <Segment className="seg" vertical textAlign='center' id="menu">
       <Container className="menu-group">
         <Header as='h1' className="menu-class">
           ANTIPASTIMISTI
@@ -507,30 +452,24 @@ const App = () => (
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
-              <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
-              </List>
+            <Grid.Column width={4} textAlign="center">
+              <Header inverted as='h4' content='Contact' />
+              <p>
+                Tel: (808) 554-8179
+              </p>
             </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
-              </List>
+            <Grid.Column width={7} textAlign="center">
+              <Header inverted as='h4' content='Location' />
+              <div>
+                {iframe}
+              </div>
             </Grid.Column>
-            <Grid.Column width={7}>
+            <Grid.Column width={5} textAlign="center">
               <Header as='h4' inverted>
-                Footer Header
+                Notice
               </Header>
               <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
+                Copyright &copy; 2020 Il Tappo
               </p>
             </Grid.Column>
           </Grid.Row>
