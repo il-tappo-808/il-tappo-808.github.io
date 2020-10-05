@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6344404ed390851461847217beed65b1",
+    "revision": "2e28b9bf43d5b7e27045a4d4924dbbea",
     "url": "/index.html"
   },
   {
-    "revision": "fc0c4542c269a1d57d96",
-    "url": "/static/css/2.a12a2a50.chunk.css"
+    "revision": "aebbb7643f48963e2e26",
+    "url": "/static/css/2.5f1adba5.chunk.css"
   },
   {
-    "revision": "ac7477b8d63afeb29e24",
-    "url": "/static/css/main.9e8efcac.chunk.css"
+    "revision": "6af695fd36550d5754b2",
+    "url": "/static/css/main.a5b135c2.chunk.css"
   },
   {
-    "revision": "fc0c4542c269a1d57d96",
-    "url": "/static/js/2.276b6d39.chunk.js"
+    "revision": "aebbb7643f48963e2e26",
+    "url": "/static/js/2.44ff0824.chunk.js"
   },
   {
     "revision": "5bd09eb7f2cf4d145d532d862be18942",
-    "url": "/static/js/2.276b6d39.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.44ff0824.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac7477b8d63afeb29e24",
-    "url": "/static/js/main.d6736c2b.chunk.js"
+    "revision": "6af695fd36550d5754b2",
+    "url": "/static/js/main.467c3848.chunk.js"
   },
   {
-    "revision": "6dfc801ff1bee3cd3bd4",
-    "url": "/static/js/runtime-main.28005713.js"
+    "revision": "6885106494498b107be8",
+    "url": "/static/js/runtime-main.e758c45e.js"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/static/media/flags.9c74e172.png"
+  },
+  {
+    "revision": "1f0fc3f3b848a9b5ffb7ac79056f3e2b",
+    "url": "/static/media/header-image.1f0fc3f3.jpg"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -90,10 +94,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
-    "revision": "b093d40734ff259e9efc2a11fbcacb30",
-    "url": "/static/media/tappo-header.b093d407.jpg"
   },
   {
     "revision": "4ed30254c40205ebc3077bcccccdedaf",
