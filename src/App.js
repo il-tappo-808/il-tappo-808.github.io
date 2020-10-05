@@ -141,7 +141,7 @@ const App = () => (
           <Grid.Column width={8} textAlign='center'>
             <Header as='h3' style={{ fontSize: '1.3em', color:'white' }} className="lol-text">
               IL TAPPO <br/>
-              2181 Kalakaua Ave. <br/>
+              2181 Kalakāua Ave. <br/>
               Honolulu HI, 96825
             </Header>
           </Grid.Column>
@@ -391,6 +391,11 @@ const App = () => (
               <Header inverted as='h4' content='Contact' />
               <p>
                 Tel: (808) 554-8179
+              </p>
+              <p>
+                IL TAPPO <br/>
+                2181 Kalakāua Ave. <br/>
+                Honolulu HI, 96825
               </p>
             </Grid.Column>
             <Grid.Column width={7} textAlign="center">
