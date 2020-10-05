@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e28b9bf43d5b7e27045a4d4924dbbea",
+    "revision": "dcc63087d98188754a99d8aae80f2bd8",
     "url": "/index.html"
   },
   {
-    "revision": "aebbb7643f48963e2e26",
-    "url": "/static/css/2.5f1adba5.chunk.css"
+    "revision": "39c79478a3041745327b",
+    "url": "/static/css/2.a12a2a50.chunk.css"
   },
   {
-    "revision": "6af695fd36550d5754b2",
-    "url": "/static/css/main.a5b135c2.chunk.css"
+    "revision": "a0e57745b13eb501c300",
+    "url": "/static/css/main.c0d5806f.chunk.css"
   },
   {
-    "revision": "aebbb7643f48963e2e26",
-    "url": "/static/js/2.44ff0824.chunk.js"
+    "revision": "39c79478a3041745327b",
+    "url": "/static/js/2.41c8ebe0.chunk.js"
   },
   {
     "revision": "5bd09eb7f2cf4d145d532d862be18942",
-    "url": "/static/js/2.44ff0824.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.41c8ebe0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6af695fd36550d5754b2",
-    "url": "/static/js/main.467c3848.chunk.js"
+    "revision": "a0e57745b13eb501c300",
+    "url": "/static/js/main.d3a61946.chunk.js"
   },
   {
     "revision": "6885106494498b107be8",
@@ -94,9 +94,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
-    "revision": "4ed30254c40205ebc3077bcccccdedaf",
-    "url": "/static/media/tappo-logo.4ed30254.png"
   }
 ]);
