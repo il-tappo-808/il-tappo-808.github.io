@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #800020;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,37 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.menu-class {
+  font-family: 'Vesper Libre', serif !important;
+  /* font-size: 2.5em !important; */
+}
+
+.menu-item {
+  font-family: 'Montserrat', sans-serif !important;
+  /* font-size: 1.5em !important; */
+  margin-bottom: 0 !important;
+}
+
+.menu-desc {
+  font-family: 'Montserrat', sans-serif !important;
+  /* font-size: 1.33em !important; */
+}
+
+.menu-group {
+  padding: 2em 0em;
+  background-color: #fff !important;
+}
+
+.seg {
+  background-color: #800020 !important;
+}
+
+.dividers {
+  width: 75%;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 @keyframes App-logo-spin {
