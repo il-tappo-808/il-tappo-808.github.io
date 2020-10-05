@@ -2,7 +2,7 @@
   "name": "il-tappo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://il-tappo-808.github.io/",
+  "homepage": "https://il-tappo-808.github.io/il-tappo",
   "dependencies": {
     "@artsy/fresnel": "^1.2.2",
     "@testing-library/jest-dom": "^4.2.4",
