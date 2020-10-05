@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/il-tappo/static/css/main.9e8efcac.chunk.css",
+    "main.js": "/il-tappo/static/js/main.d4cf3966.chunk.js",
+    "main.js.map": "/il-tappo/static/js/main.d4cf3966.chunk.js.map",
+    "runtime-main.js": "/il-tappo/static/js/runtime-main.0444a5fc.js",
+    "runtime-main.js.map": "/il-tappo/static/js/runtime-main.0444a5fc.js.map",
+    "static/css/2.a719dc72.chunk.css": "/il-tappo/static/css/2.a719dc72.chunk.css",
+    "static/js/2.276b6d39.chunk.js": "/il-tappo/static/js/2.276b6d39.chunk.js",
+    "static/js/2.276b6d39.chunk.js.map": "/il-tappo/static/js/2.276b6d39.chunk.js.map",
+    "index.html": "/il-tappo/index.html",
+    "precache-manifest.9ed7351bcc71cc4d3521b1ba2717208a.js": "/il-tappo/precache-manifest.9ed7351bcc71cc4d3521b1ba2717208a.js",
+    "service-worker.js": "/il-tappo/service-worker.js",
+    "static/css/2.a719dc72.chunk.css.map": "/il-tappo/static/css/2.a719dc72.chunk.css.map",
+    "static/css/main.9e8efcac.chunk.css.map": "/il-tappo/static/css/main.9e8efcac.chunk.css.map",
+    "static/js/2.276b6d39.chunk.js.LICENSE.txt": "/il-tappo/static/js/2.276b6d39.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/il-tappo/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/tappo-header.jpg": "/il-tappo/static/media/tappo-header.b093d407.jpg",
+    "static/media/tappo-logo.png": "/il-tappo/static/media/tappo-logo.4ed30254.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0444a5fc.js",
+    "static/css/2.a719dc72.chunk.css",
+    "static/js/2.276b6d39.chunk.js",
+    "static/css/main.9e8efcac.chunk.css",
+    "static/js/main.d4cf3966.chunk.js"
+  ]
+}
